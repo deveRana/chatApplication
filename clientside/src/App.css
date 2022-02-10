@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Poppins&family=Rubik&display=swap');
+
+/*
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/
+ 
+*{
+  margin:0;
+  padding:0;
+}
+
+.appContainer{
+  width:100vw;
+  height:100vh;
+}
+
+.loginContainer{
+  width:100vw;
+  height:100vh;
+  background-image: linear-gradient(-90deg , #f88379 50% ,  whitesmoke 50% );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerLoginContainer{
+  width:60vw;
+  height:80vh;
+  background-image: linear-gradient(90deg , #f88379 50% ,  whitesmoke 50% );
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.headingDiv{
+  width:60vw;
+  height:20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatName{
+  width: 10vw;
+  height: 20vh;
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 1.1px 1.1px rgba(0, 0, 0,0.8);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appName{
+  width: 10vw;
+  height: 20vh;
+  color:  #f88379;
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 1.1px 1.1px rgba(0, 0, 0,0.8);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleLoginDiv{
+  width:60vw;
+  height:60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftGoggleloginDiv{
+  width:30vw;
+  height:60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightGoggleloginDiv{
+  width:30vw;
+  height:60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.howtoLoginDiv{
+  width:30vw;
+  height:20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howtoLoginDiv p{
+
+  font-size: 30px;  
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.loginStepsDiv{
+  width:30vw;
+  height:40vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.loginStepsDiv ul{
+  list-style: decimal;
+}
+
+.loginStepsDiv ul li{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
+
+.googleIcon{
+  background-color: transparent !important ;
+  color: rgba(0, 0, 0, 0.54) !important ;
+  box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important ;
+  border-radius: 2px !important ;
+  border: 1px solid transparent !important ;
+  font-family: Roboto, sans-serif !important ;
+  opacity: 0.6 !important ;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  margin-bottom: 50px !important;
+}
+
+.googleIcon div{
+  margin: 0 !important;
+  background: transparent !important;
+  padding: 10px !important;
+}
+
+
+.googleIcon-2{
+  background-color: transparent !important ;
+  color: rgba(0, 0, 0, 0.54) !important ;
+  box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important ;
+  border-radius: 2px !important ;
+  border: 1px solid transparent !important ;
+  font-family: Roboto, sans-serif !important ;
+  opacity: 0.6 !important ;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  margin: 0 !important ;  
+}
+
+
+.googleIcon-2 div{
+  margin: 0 !important;
+  background: transparent !important;
+  padding: 10px !important;
+}
+
+
+.chatBoxContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.userScreenContainer{
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userHeadingContainer{
+  height: 10vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f88379;
+}
+
+.userHeadingLeft{
+  height: 10vh;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.userHeadingLeft img{
+
+  height: 7.5vh;
+  width: 7.5vh;
+  margin-left: 20px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.userHeadingRight{
+  height: 10vh;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.userHeadingRight svg{
+  
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 20px;
+
+}
+
+
+
+.searchBarContainer{
+  height: 10vh;
+  width: 30vw;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.searchDiv{
+  height: 7.4vh;
+  width: 29vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  background: #f88379;
+}
+
+.searchDiv svg {
+  
+  background: transparent;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.searchDiv input{
+  background: transparent;
+  outline: none;
+  border: none;
+  color: black;
+  width: 21vw;
+  padding-left: 20px;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.searchDiv input::placeholder{
+  color: black;
+} 
+
+.userChatsContainer{
+  height: 80vh;
+  width: 30vw;
+  background: whitesmoke;
+  overflow-y: auto;
+}
+
+.otherUserChat{
+
+  margin-top: 5px;
+  height: 12vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.otherUserChat:hover{
+  background-color: #ffe4e1;
+
+}
+
+.otheruserImg{
+  height: 10vh;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otheruserImg img{
+  height: 8vh;
+  width: 8vh;
+  border-radius: 200px;
+}
+
+.otherUserMesssage{
+  height: 10vh;
+  width: 23vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.otherUserName{
+  font-size: 21px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+
+.otherUserMsg{
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.SecondUserScreeenContainer{
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondUserHeadingDiv{
+  height: 10vh;
+  width: 70vw;
+  background: #f88379;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondUserImgDiv{
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.secondUserImgDiv img{
+
+  height: 7.5vh;
+  width: 7.5vh;
+  margin-left: 25px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+
+.secondUserNameDiv{
+  height: 10vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.secondUserDotsDiv{
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondUserDotsDiv svg{
+  font-weight: 900;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.UserChattingDiv{
+  height: 80vh;
+  width: 70vw;
+  background-color: #ffe4e1;
+  flex: 1;
+  overflow-y: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*  */
+/*  */
+
+.chat{
+  line-height: 22px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  min-width: 50px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.chat::after{
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: auto;
+  border: 22px solid;
+}
+
+
+.msg{
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
+
+.msgTime{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #00000073;
+  font-size: 11px;
+}
+
+.you{
+  float: left;
+  margin-right: 10%;
+  font-size: 14px;
+  left: 30px;
+  margin-top: 15px;
+  background-color: #F6f1f4;
+}
+
+.you::after{
+  left: -12px;
+  right: auto;
+  border-color: #F6f1f4 transparent transparent transparent;
+}
+
+.you .name{
+  font-weight: 900;
+  color: #de3163;
+}
+
+.me{
+  float: right;
+  margin-left: 10%;
+  background: #F5F5F5;  
+  right: 30px; 
+}
+
+.me::after{
+  right: -12px;
+  left: auto;
+  border-color: #F5F5F5 transparent transparent transparent;
+}
+
+.me .name{
+  font-weight: 800;
+  color: #f88379;
+}
+
+
+
+/*  */
+/*  */
+
+
+.MessageSectionDiv{
+  height: 10vh;
+  width: 70vw;
+  background: #f88379;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsDiv{
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.iconsDiv svg{
+  font-size: 35px;
+  color: #ffe4e1;
+  cursor: pointer;
+}
+
+.inputMessageDiv{
+  height: 10vh;
+  width: 53vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputMessageDiv input{
+  height: 7.4vh;
+  width: 50vw;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 80px;
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 30px;
+}
+
+.sendMessageDiv{
+  height: 10vh;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sendMessageDiv svg{
+  font-size: 35px;
+  color: #ffe4e1;
+  cursor: pointer;
+}
+
+
+.EmptyScreen{
+
+  height: 100vh;
+  width: 70vw;
+  background-color: #ffe4e1;
+}
+
+.drawerDiv{
+  height: 100vh;
+  width: 30vw;
+  background: #f88379;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.userDrawerUpperSection{
+  height: 20vh;
+  width: 30vw;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.userDrawerUpperSection span{
+  height: 20vh;
+  width: 5vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.userDrawerUpperSection span svg{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #f88379;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.crossIcon svg{
+  font-size: 15px !important;
+  margin-bottom: 18px !important;
+
+}
+
+.userDrawerUpperSection p{
+  
+  height: 20vh;
+  width: 25vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 800;
+  color: #f88379;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+
+.userDrawerImg{
+  border-top: rgba(0, 0, 0, 0.1);
+  border-bottom: rgba(0, 0, 0, 0.1);
+  height: 40vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userDrawerImg img{
+  height: 30vh;
+  width: 30vh;
+  border-radius: 150px;
+}
+
+.userDrawerLowerSection{
+  height: 15vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.userDrawerNameHeading{
+
+  height: 7.5vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.userDrawerLowerSection span{
+  font-family: 'Montserrat', sans-serif;
+  color: #f88379;
+  font-size: 18px;
+  font-weight: 900;
+  padding-left: 30px;
+}
+
+.userDrawerNameSection{
+
+  height: 7.5vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.userDrawerLowerSection p{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+  padding-left: 30px;
+}
